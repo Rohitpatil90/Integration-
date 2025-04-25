@@ -1,1 +1,20 @@
 
+Step 1 => Set Remote Site Settings (https://reqres.in)
+step 2 => Create Apex class for callout 
+          public class ApexRestCallOutDemo{
+              public static void getUsersFromExternalSystem(){
+                  HTTP httpObj = new HTTP();  // This creates an instance of the HTTP class, which is used to send the request.
+                  HTTPRequest req = new HTTPRequest();   // This creates a new HTTP request.You'll use this object to set the URL (endpoint), method (GET, POST, etc.), headers, and body.
+
+                  req.setEndpoint('https://reqres.in/api/users'); //this is where we need to give external Systems End Point URL 
+                  req.setHeader('Content-Type','application/json');  // this will shows like in which laguage we are geting the data JSON/XML 
+                  req.setMethod('GET'); // because we are getting the data from external system 
+                  req.setBody(''); // here we are not using cause we are not sending the data to external system 
+
+                  HTTPResponse res = new HTTPResponse();
+                  res = httpObj.send(req);  // in res object we are getting the response of the object 
+
+                  system.debug(res.getBody()); //directly using res we are not able to get the data we need to use getBody(); method 
+              }
+          }
+step 3 => Call Apex Class and mehod using anonymous window.
