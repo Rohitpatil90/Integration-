@@ -22,3 +22,5 @@
   = call authorize method // this is not applicable for our scenario becuse this is publically available API 
   = call actual method 
   
+
+# Quick Quetoions 
