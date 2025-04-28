@@ -26,3 +26,14 @@
 # Quick Quetoions 
 1) External System Sends datato salesforce external system initiates the call ? hat type of integration is it? 
 Ans - Inbound 
+
+2) Salesforce Calls external System to insert some data. here salesforce initiates the call what type of integration is this ?
+Ans - OutBound 
+
+3)  Salesforce calls External system using apex what is it called ? 
+Ans - callout
+
+4) sysytem provides services will host the API any other sysytem can call this API to access services . true or false ? 
+Ans - true 
+      SF------->API,SAP 
+
