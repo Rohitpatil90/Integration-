@@ -1,3 +1,18 @@
 # Call External System from salesforce using soap callout 
 # Things to do for Soap Callout 
-         1) Get WSDL (Web Service Des
+         1) Get WSDL (Web Service Description Language ) File
+         2) upload wsdl file in salesforce setup
+         3) salesforce generates methods from wsdl file that calls external sysytem
+         4) first we have to call authentication method then we have to call actual service method 
+         5) the system which is offering services will give you WSDL File before you build your integration 
+
+# In this scenario salesforce calls external system by passing country name and external system gives you famous park names 
+  available in that country 
+   step 1 => Create Remote site settings (https://th-apex-soap-service.herokuapp.com)
+   step 2 => In setUp got to apex classes then select genrate apex class from WSDL file 
+   step 3 => call main apex class and inner apex and the method which will return park names from anonymous window 
+             parksServices.ParksImplPort parkobj = new parksServices.ParksImplPort();
+             List <String> parknames = parkobj.byCountry('Germany');
+             system.debug('Park Names =>>' + parknames);
+             OUT Put -> Park Names =>>(Hamburg Wadden Sea National Park, Hainich National Park, Bavarian Forest National Park)
+  
