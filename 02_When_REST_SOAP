@@ -1,0 +1,9 @@
+1) when to choose REST => (Representational state transfer)
+          - If Targeted System Supports Only REST 
+          - if we need faster transaction
+          - if we need easy to develop transaction 
+
+2) when to choose SOAP => (Simple object access protocol)
+          - if our targeted system supports only SOAP 
+          - if we need secure transactions like finance transaction 
+          - if we need stateful transaction 
