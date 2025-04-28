@@ -15,4 +15,10 @@
              List <String> parknames = parkobj.byCountry('Germany');
              system.debug('Park Names =>>' + parknames);
              OUT Put -> Park Names =>>(Hamburg Wadden Sea National Park, Hainich National Park, Bavarian Forest National Park)
+
+  = get wsdl file 
+  = upload wsdl file 
+  = add endpoint url in remote site settings 
+  = call authorize method // this is not applicable for our scenario becuse this is publically available API 
+  = call actual method 
   
