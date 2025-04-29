@@ -1,0 +1,23 @@
+# Calls Salesforce From External System using Standard REST API 
+# for any insert/update/delete/query operations on any salesforce object dont write write custom api's instead use salesforce 
+  provide api's (this are called standard API's 
+# things to do for call-in / inbound integration 
+      - create user for external user and share it with them 
+      - share our api dtails 
+      - endpoint url 
+      - method GET,POST,PUT,PATCH, DELETE 
+      - REQUEST Body
+      - Response 
+      - create connected app 
+
+
+# standard rext api looks like this for query records in salesforce 
+      - https://ibirdssoftwareservicespv-8f-dev-ed.develop.my.salesforce.com (salesforce Domain address) 
+      - services/data/v61.0/sobjects/Account/001001OPIQUAHAHU (service resource which is responsible for querying account)
+      - ibirdssoftwareservicespv-8f-dev-ed.develop.my.salesforce.com/services/data/v61.0/sobjects/Account/001001OPIQUAHAHU
+
+         request account data 
+ SF <-------------------------------------- EX
+                   |
+         request account data 
+ SF <-------------------------------------- EX
