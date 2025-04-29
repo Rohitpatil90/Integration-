@@ -5,3 +5,9 @@
                         - Coding Allowed 
                         - Only REST Allowed 
 
+2) Apex SOAP Callout => 
+                        - when salesforce needs to call external system 
+                        - SF----> EX
+                        - Response needed 
+                        - Coding Allowed 
+                        - Only SOAP Allowed 
