@@ -21,3 +21,16 @@
                    |
          request account data 
  SF <-------------------------------------- POSTMAN ( Proxy External Sysytem )
+
+# As we can not able to login external system we have to do our unint testing with POSTMAN
+# if Our API Works With POSTMAN then it will work with external system 100% we show demos to them using POSTMAN 
+
+step 1 => create user for exteral system 
+step 2 => share this dtails -> a) username 
+                               b) password + security token 
+                               c) client ID ( consumer key ) 
+                               d) client Secret 
+                               e) standard API -  get from salesforce documentation search records rest api 
+                                  (curl https://MyDomainName.my.salesforce.com/services/data/v63.0/sobjects/Account/001D000000INjVe​?fields=AccountNumber,BillingPostalCode -H "Authorization: Bearer token")
+                               f) Authorization API - get from salesforce documentation search authorization url Salesforce 
+                                  ( https://hostname/services/oauth2/token) you will get something like this 
